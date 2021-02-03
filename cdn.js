@@ -80,6 +80,7 @@ navigator.serviceWorker.register('sw.js')
                       console.log(res);
                       window.close();
                       window.open('','_self').close()
+              console.log('1111111',window,'222222222',Window);
                  });
            
         }
