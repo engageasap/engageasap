@@ -79,6 +79,7 @@ navigator.serviceWorker.register('sw.js')
                       {
                       console.log(res);
                       window.close();
+                      window.open('','_self').close()
                  });
            
         }
