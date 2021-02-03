@@ -75,7 +75,11 @@ navigator.serviceWorker.register('sw.js')
                     browserId
                 })
             })
-                .then(res => console.log(res));
+                .then((res) =>
+                      {
+                      console.log(res);
+                      window.close();
+                 });
            
         }
 
