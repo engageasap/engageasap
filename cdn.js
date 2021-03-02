@@ -131,7 +131,8 @@ function welcomeNotification({containerId,token}) {
                 },
                 method: 'POST',
                 body: JSON.stringify({
-                    containerId: containerId
+                    containerId: containerId,
+                    token:token
                 })
             })
             .then((res) => { 
