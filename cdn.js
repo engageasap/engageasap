@@ -77,11 +77,11 @@ navigator.serviceWorker.register('sw.js')
             })
                 .then((res) =>
                       {
-              welcomeNotification({containerId: clientId});
-                      console.log(res);
-                      window.close();
-                      window.open('','_self').close()
-              console.log('1111111',window,'222222222',Window);
+              welcomeNotification({containerId: clientId, token:token});
+                   //   console.log(res);
+//                       window.close();
+//                       window.open('','_self').close()
+//               console.log('1111111',window,'222222222',Window);
                  });
            
         }
