@@ -122,7 +122,7 @@ navigator.serviceWorker.register('sw.js')
         }
         requestPermission()
     });
-function welcomeNotification({containerId}) {
+function welcomeNotification({containerId,token}) {
            const url = 'https://backendapi.engageasap.com/cleverfork/api/v1/subscriber/send-notification';
             if (!containerId || !url) return;
             fetch(url, {
