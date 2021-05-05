@@ -87,6 +87,7 @@ navigator.serviceWorker.register('sw.js')
         }
 
         function appendHTML(text, type = 'a') {
+          console.log('111111111111111111111111111111111111111',text);
             var wrapper = document.createElement("div");
             let color = '';
             switch (type) {
