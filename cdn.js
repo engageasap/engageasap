@@ -10,7 +10,7 @@ var firebaseConfig = {
     databaseURL: "https://pushservice-de9e2.firebaseio.com",
     projectId: "pushservice-de9e2",
     //storageBucket: "pushservice-de9e2.appspot.com",
-    storageBucket: "gs://carpreachers.appspot.com",
+    storageBucket: "carpreachers.appspot.com",
     messagingSenderId: "53707849923",
     appId: "1:53707849923:web:fd85f9eb2ea64d1c"
 };
