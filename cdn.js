@@ -4,24 +4,24 @@ function getQueryStringValue (key) {
 const PUSH_SERVICE_CLIENT_ID = getQueryStringValue("clientid");
 const PUSH_BROWSER_ID = getQueryStringValue("browserId");
 console.log("PUSH_SERVICE_CLIENT_ID", PUSH_SERVICE_CLIENT_ID);
-// var firebaseConfig = {
-//     apiKey: "AIzaSyDwQ1l_xlv152z3zsXoCEqVrdy32ZkGtOQ",
-//     authDomain: "pushservice-de9e2.firebaseapp.com",
-//     databaseURL: "https://pushservice-de9e2.firebaseio.com",
-//     projectId: "pushservice-de9e2",
-//     storageBucket: "pushservice-de9e2.appspot.com",
-//     messagingSenderId: "53707849923",
-//     appId: "1:53707849923:web:fd85f9eb2ea64d1c"
-// };
-const firebaseConfig = {
-  apiKey: "AIzaSyArTWpoNoGpJ9CUx2w6JVLifymCtZ1lPG8",
-  authDomain: "carpreachers.firebaseapp.com",
-  databaseURL: "https://carpreachers.firebaseio.com",
-  projectId: "carpreachers",
-  storageBucket: "carpreachers.appspot.com",
-  messagingSenderId: "145414864006",
-  appId: "1:145414864006:web:c75af7e772750428"
+var firebaseConfig = {
+    apiKey: "AIzaSyDwQ1l_xlv152z3zsXoCEqVrdy32ZkGtOQ",
+    authDomain: "pushservice-de9e2.firebaseapp.com",
+    databaseURL: "https://pushservice-de9e2.firebaseio.com",
+    projectId: "pushservice-de9e2",
+    storageBucket: "pushservice-de9e2.appspot.com",
+    messagingSenderId: "53707849923",
+    appId: "1:53707849923:web:fd85f9eb2ea64d1c"
 };
+// const firebaseConfig = {
+//   apiKey: "AIzaSyArTWpoNoGpJ9CUx2w6JVLifymCtZ1lPG8",
+//   authDomain: "carpreachers.firebaseapp.com",
+//   databaseURL: "https://carpreachers.firebaseio.com",
+//   projectId: "carpreachers",
+//   storageBucket: "carpreachers.appspot.com",
+//   messagingSenderId: "145414864006",
+//   appId: "1:145414864006:web:c75af7e772750428"
+// };
 
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
